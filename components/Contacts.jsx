@@ -143,7 +143,7 @@ const Contacts = () => {
                             </>
                         )
                     }
-                    <button onClick={createChat} className="btn">START A NEW CHAT</button>
+                    <button disabled={selectedContacts.length === 0} onClick={createChat} className="btn">START A NEW CHAT</button>
 
                 </div>
             </div>
